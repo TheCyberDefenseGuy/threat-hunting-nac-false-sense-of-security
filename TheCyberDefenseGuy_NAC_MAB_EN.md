@@ -12,19 +12,19 @@ After NAC: The Network Owner starts believing they are 100% secure. One tool, on
 
 #### Network Background: Infrastructure without governance
 
-Networks without proper segmentation, lack of identity management, endpoints without hardening or a mature GPO process following CIS Benchmark best practices, no network inventory, no change management process, no CMDB, no backup — or if there is a backup, no mature backup process to support it.
+Networks without proper segmentation, lack of identity management, endpoints without hardening or a mature GPO process following CIS Benchmark best practices, no network inventory, no change management process, no CMDB, no backup or if there is a backup, no mature backup process to support it.
 
 **Project scope:** I want to protect my assets and ensure only known devices access the network.
 
 **Reality:** I don't know my own network (Shadow IT), hubs, bridges, InterVlans — there's no network segmentation, no restrictive access policies via firewalls.
 
-**Monitoring:** Usually no SIEM, or no centralized log management tool. Even when a SIEM exists, there's no clear understanding of what to look for — relying solely on the tool's default templates. No understanding of the network's critical flow. No log collection for analysis and correlation in the event of an incident.
+**Monitoring:** Usually no SIEM, or no centralized log management tool. Even when a SIEM exists, there's no clear understanding of what to look for relying solely on the tool's default templates. No understanding of the network's critical flow. No log collection for analysis and correlation in the event of an incident.
 
 **Pressure from day one:** Tight delivery deadlines, consultant guidance being drastically ignored for one simple reason: "I'll fix it later, I need to ship."
 
 ---
 
-What was supposed to be a security project turns into a network project. IoT devices start appearing — printers, access control gates, cameras, servers, and machines not yet in compliance — all accessing via MAB.
+What was supposed to be a security project turns into a network project. IoT devices start appearing: printers, access control gates, cameras, servers, and machines not yet in compliance — all accessing via MAB.
 
 > **MAB is not a solution, it's a workaround for legacy devices:** the fine print is that it only works if your network is properly structured to support those devices. Otherwise, you're creating a backdoor in your own network.
 
@@ -54,7 +54,7 @@ graph TD
     style D fill:#111,stroke:#aaaaaa,color:#aaaaaa
 ```
 
-I'm talking about the basics: a malicious machine on a disorganized network — no hardening, no GPO, no log analysis and correlation, no team to investigate and test known post-implementation attacks.
+I'm talking about the basics: a malicious machine on a disorganized network: no hardening, no GPO, no log analysis and correlation, no team to investigate and test known post-implementation attacks.
 
 ---
 
@@ -90,7 +90,7 @@ sequenceDiagram
 - [Kerberoasting - Bureau Veritas](https://cybersecurity.bureauveritas.com/es/blog/kerberoasting-explotar-kerberos-para-comprometer-microsoft-active-directory)
 - [Kerberoasting attacks on AD - Specops](https://specopssoft.com/es/blog/ataques-de-kerberoasting-en-active-directory/)
 
-Once inside the network, a backdoor like this exposes everything else — things that could have been reviewed and hardened before NAC was even deployed. A simple CIS Benchmark review would have already significantly reduced the attack surface.
+Once inside the network, a backdoor like this exposes everything else, things that could have been reviewed and hardened before NAC was even deployed. A simple CIS Benchmark review would have already significantly reduced the attack surface.
 
 **Reference:** [CIS Benchmark - Microsoft Compliance](https://learn.microsoft.com/en-us/compliance/regulatory/offering-CIS-Benchmark)
 
@@ -122,7 +122,7 @@ graph LR
 
 **Always prefer 802.1x:** many devices and software on the network are outdated, but some already support 802.1x in newer versions.
 
-If 802.1x is not supported, plan to isolate those devices in a critical VLAN — preferably on a switch physically separate from 802.1x devices.
+If 802.1x is not supported, plan to isolate those devices in a critical VLAN, preferably on a switch physically separate from 802.1x devices.
 
 - For devices that only receive connections: restrict to unidirectional access only.
 - For services that need internet or internal network access: limit to the specific required port only. For internet access, block it if possible. If updates are required, do them offline.
@@ -136,7 +136,7 @@ If 802.1x is not supported, plan to isolate those devices in a critical VLAN —
 
 The point here is not to present a solution to every problem, but to highlight a real risk I see in every NAC implementation I work with or operate on a daily basis.
 
-Reducing the attack surface doesn't mean you'll prevent a breach — it means you'll delay the attacker's movement and exploitation of the network as long as possible, increasing the chance of detection and eradication.
+Reducing the attack surface doesn't mean you'll prevent a breach, it means you'll delay the attacker's movement and exploitation of the network as long as possible, increasing the chance of detection and eradication.
 
 ---
 
