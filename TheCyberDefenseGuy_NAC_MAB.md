@@ -90,7 +90,7 @@ sequenceDiagram
 - [Kerberoasting - Bureau Veritas](https://cybersecurity.bureauveritas.com/es/blog/kerberoasting-explotar-kerberos-para-comprometer-microsoft-active-directory)
 - [Ataques de Kerberoasting no AD - Specops](https://specopssoft.com/es/blog/ataques-de-kerberoasting-en-active-directory/)
 
-Uma vez na rede, depois de um backdoor desses, você expõe todo o resto — que poderia ter sido revisado e melhorado antes mesmo do NAC ser implementado. Um simples CIS Benchmark já diminuiria consideravelmente a superfície de ataque.
+Uma vez na rede, depois de um backdoor desses, você expõe todo o resto que poderia ter sido revisado e melhorado antes mesmo do NAC ser implementado. Um simples CIS Benchmark já diminuiria consideravelmente a superfície de ataque.
 
 **Referência:** [CIS Benchmark - Microsoft Compliance](https://learn.microsoft.com/en-us/compliance/regulatory/offering-CIS-Benchmark)
 
