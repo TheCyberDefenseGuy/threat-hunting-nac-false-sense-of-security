@@ -32,7 +32,7 @@ Era para ser um projeto de segurança, vira um projeto de rede. Aparecem os devi
 
 #### Superfície de Ataque
 
-Imagina o seguinte: você adicionou um device na rede usando MAB, configurado de forma tradicional (Static Group). O ambiente entrou em produção; sua fábrica remota, ou escritório remoto, teve um acesso violado — simplesmente um funcionário mal intencionado, ou um terceiro, ou até mesmo uma ferramenta com acesso direto à internet foi conectada em uma porta de rede, abrindo um acesso legítimo para internet. Ou simplesmente o atacante clonando o MAC address de uma impressora.
+Imagina o seguinte: você adicionou um device na rede usando MAB, configurado de forma tradicional (Static Group). O ambiente entrou em produção; sua fábrica remota, ou escritório remoto, teve um acesso violado, simplesmente um funcionário mal intencionado, ou um terceiro, ou até mesmo uma ferramenta com acesso direto à internet foi conectada em uma porta de rede, abrindo um acesso legítimo para internet. Ou simplesmente o atacante clonando o MAC address de uma impressora.
 
 Geralmente o tempo de abrir o chamado e a verificação via SLA por parte da TI já foi suficiente para: reconhecimento, enumeração, sequestro de credenciais, movimento lateral, execution e, dependendo do tipo de ataque, exfiltração e/ou criptografia de todos os dados da empresa.
 
@@ -122,7 +122,7 @@ graph LR
 
 **Prefira sempre 802.1x:** muitos devices e softwares estão desatualizados na rede e alguns já suportam 802.1x em versões mais recentes.
 
-Caso não suportar, siga um planejamento de isolamento dos devices em uma VLAN crítica — de preferência em um switch separado fisicamente dos devices 802.1x.
+Caso não suportar, siga um planejamento de isolamento dos devices em uma VLAN crítica, de preferência em um switch separado fisicamente dos devices 802.1x.
 
 - Para devices que só recebem conexões: limitar acesso unidirecional apenas.
 - Para serviços que precisam acessar a internet ou outros serviços dentro da rede: limitar apenas à porta específica. Para internet, se possível, não permitir acesso. Caso sejam necessárias atualizações, fazer de forma offline.
@@ -136,7 +136,7 @@ Caso não suportar, siga um planejamento de isolamento dos devices em uma VLAN c
 
 O ponto aqui não é trazer a solução para todos os problemas, mas mostrar um risco real que vejo em cada implementação de NAC em que atuo ou opero no dia a dia.
 
-Diminuir a superfície de ataque não significa que irá evitá-lo, mas sim atrasar ao máximo o atacante na movimentação e exploração da rede — aumentando a possibilidade de detecção e erradicação do mesmo.
+Diminuir a superfície de ataque não significa que irá evitá-lo, mas sim atrasar ao máximo o atacante na movimentação e exploração da rede, aumentando a possibilidade de detecção e erradicação do mesmo.
 
 ---
 
