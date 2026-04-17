@@ -16,7 +16,7 @@ Networks without proper segmentation, lack of identity management, endpoints wit
 
 **Project scope:** I want to protect my assets and ensure only known devices access the network.
 
-**Reality:** I don't know my own network (Shadow IT), hubs, bridges, InterVlans — there's no network segmentation, no restrictive access policies via firewalls.
+**Reality:** I don't know my own network (Shadow IT), hubs, bridges, InterVlans, there's no network segmentation, no restrictive access policies via firewalls.
 
 **Monitoring:** Usually no SIEM, or no centralized log management tool. Even when a SIEM exists, there's no clear understanding of what to look for relying solely on the tool's default templates. No understanding of the network's critical flow. No log collection for analysis and correlation in the event of an incident.
 
@@ -24,7 +24,7 @@ Networks without proper segmentation, lack of identity management, endpoints wit
 
 ---
 
-What was supposed to be a security project turns into a network project. IoT devices start appearing: printers, access control gates, cameras, servers, and machines not yet in compliance — all accessing via MAB.
+What was supposed to be a security project turns into a network project. IoT devices start appearing: printers, access control gates, cameras, servers, and machines not yet in compliance, all accessing via MAB.
 
 > **MAB is not a solution, it's a workaround for legacy devices:** the fine print is that it only works if your network is properly structured to support those devices. Otherwise, you're creating a backdoor in your own network.
 
@@ -32,7 +32,7 @@ What was supposed to be a security project turns into a network project. IoT dev
 
 #### Attack Surface
 
-Picture this: you added a device to the network using MAB, configured the traditional way (Static Group). The environment went into production. Your remote factory or branch office had an access breach — a malicious insider, a third party, or even a tool with direct internet access plugged into a network port, opening a legitimate path to the internet. Or simply an attacker cloning a printer's MAC address.
+Picture this: you added a device to the network using MAB, configured the traditional way (Static Group). The environment went into production. Your remote factory or branch office had an access breach, a malicious insider, a third party, or even a tool with direct internet access plugged into a network port, opening a legitimate path to the internet. Or simply an attacker cloning a printer's MAC address.
 
 By the time IT opens a ticket and runs through SLA verification, there's already been enough time for: reconnaissance, enumeration, credential theft, lateral movement, execution — and depending on the attack type, exfiltration and/or full data encryption.
 
